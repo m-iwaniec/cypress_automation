@@ -1,0 +1,21 @@
+{
+    "pageLoadTimetout": 20000,
+    "defaultCommandTimeout": 8000,
+    "reporter": "mochawesome",
+
+    "scripts": {
+        "cy:run": "cypress run",
+        "cy:open": "cypress open"
+    },
+
+    "projectId": "3q142e",
+    "retries": {
+        "runMode": 1
+    },
+
+    "env": 
+    {
+        "url": "https://rahulshettyacademy.com",
+        "wordleURL": "https://www.nytimes.com/games/wordle/index.html"
+    }
+}

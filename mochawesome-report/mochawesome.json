@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-18T14:28:41.207Z",
+    "end": "2022-04-18T14:28:52.811Z",
+    "duration": 11604,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d76e649b-8e27-435d-94f3-40540b52819b",
+      "title": "",
+      "fullFile": "cypress/integration/GreenKart/test2.spec.js",
+      "file": "cypress/integration/GreenKart/test2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "387e8260-f517-4c32-a989-d58468334ddf",
+          "title": "Second test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Second test case",
+              "fullTitle": "Second test Second test case",
+              "timedOut": null,
+              "duration": 9555,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\"); // CHECKBOX / RADIO\n// use check() or click()\ncy.get('#checkBoxOption1').check() // check a checkbox/radio,\n.should('be.checked').and('have.value', 'option1'); // assert\ncy.get('#checkBoxOption1').uncheck().should('not.be.checked'); // check if unchecked\n// to check all checkboxes, find common property (e.g. type)\n// its 'input[type=\"checkbox\"'\n// then, put it in cypress selector tool and see if all chosen boxes become checked\ncy.get('input[type=\"checkbox\"').check().uncheck(); // checks/unchecks all of them\ncy.get('input[type=\"checkbox\"').check(['option2', 'option3']); // signals what value (box) is to be checked\n// .check(['value', 'value'])\n// check specific value for radio button\ncy.get('[value=\"radio2\"]').check().should('be.checked'); // STATIC DROPDOWN\ncy.get('select').select('option2') // tagname select is for static dropdowns\n// .select('value')\n.should('have.value', 'option2'); // checks if option 2 is selected\n// .should('have.value', 'option1') - fails\n// DYNAMIC DROPDOWN\ncy.get('#autocomplete').type('new'); // check what sequence of characters (in cypress browser) captures all of the displayed options\ncy.get('.ui-menu-item div').each(($el, index, $list) => {\n  // .class space tagname = common name for elements on dynamic dropdown menu\n  // loop through the elements\n  if ($el.text() === \"New Zealand\") // text() is jQery, so must solve the promise manually\n    {\n      cy.wrap($el).click();\n    } // else {\n  //       cy.log('could not find \"New Zealand\"')\n  //   }\n});\ncy.get('#autocomplete').should('have.value', 'New Zealand'); // HANDLING VISIBLE AND INVISIBLE ELEMENTS\ncy.get('#displayed-text').should('be.visible');\ncy.get('#hide-textbox').click();\ncy.get('#displayed-text').should('not.be.visible');\ncy.get('#show-textbox').click();\ncy.get('#displayed-text').should('be.visible');",
+              "err": {},
+              "uuid": "83d77929-2523-4e28-a411-c56e91ec7cf2",
+              "parentUUID": "387e8260-f517-4c32-a989-d58468334ddf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83d77929-2523-4e28-a411-c56e91ec7cf2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9555,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

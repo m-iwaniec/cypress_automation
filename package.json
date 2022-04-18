@@ -1,0 +1,37 @@
+{
+  "name": "cypress_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run",
+    "headTest": "npm run test -- --headed --record --spec /home/martyna/cypress_automation/cypress/integration/project1/test1.spec.js",
+    "firefoxTest": "npm run test -- --browser firefox --parallel",
+    "recordDashboardTest": "npm run test --record --key 944318e-c628-4c4c-a5a7-36990dc9d65a --reporter mochawesome",
+    "greenKartTest": "npm run test -- --spec \"/home/martyna/cypress_automation/cypress/integration/GreenKart/*\""
+    
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-iwaniec/cypress_automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-iwaniec/cypress_automation/issues"
+  },
+
+  "homepage": "https://github.com/m-iwaniec/cypress_automation#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.4",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^6.7.1",
+    "cypress": "^9.5.3",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^9.2.2",
+    "mochawesome": "^7.1.3",
+    "ts-loader": "^9.2.8"
+  }
+}
