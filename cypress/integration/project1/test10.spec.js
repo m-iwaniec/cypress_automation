@@ -8,7 +8,7 @@ before(function() {
     cy.fixture('example').then(function(data) {
         this.data = data
     })
-  })
+})
 
 
 
@@ -54,8 +54,6 @@ describe("Tenth test", function() {
 
 
         
-
-
         this.data.productName.forEach(function(element){
 
             cy.selectProduct(element)

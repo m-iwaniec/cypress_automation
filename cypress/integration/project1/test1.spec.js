@@ -20,9 +20,9 @@ describe("First test", function() {
 
 // method 2
 
-        cy.get('.products').find('.product').each(($e1, index, $list) => {
+        cy.get('.products').find('.product').each(($el, index, $list) => {
             // a loop
-            const textVeg = $e1.find('h4.product-name').text()
+            const textVeg = $el.find('h4.product-name').text()
             // $el = product
             // h4.product-name to find only 4 elements
             if(textVeg.includes('Cashews')) {

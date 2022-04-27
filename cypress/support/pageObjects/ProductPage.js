@@ -1,7 +1,7 @@
 class ProductPage {
 
     checkOutButton() {
-        return cy.get('#navbarResponsive > .navbar-nav > .nav-item > .nav-link') // checkout button
+        return cy.get('#navbarResponsive > .navbar-nav > .nav-item > .nav-link')
     }
 }
     

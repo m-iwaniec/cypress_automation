@@ -48,10 +48,10 @@
 <br><code>True</code>
 25. Adding explicit wait in your spec file?
 <br><code>It will be applicable only after the wait specific line</code>
-26. 
-<br><code></code>
-27. 
-<br><code></code>
+26. XHR stands for
+<br><code>XMLHttpRequest</code>
+27. XHR Methods transfer data between
+<br><code>web browser and web server</code>
 28. 
 <br><code></code>
 29. 

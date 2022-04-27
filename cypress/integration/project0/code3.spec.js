@@ -21,7 +21,7 @@ cy.get('.ui-menu-item div').each(($e1, index, $list) => {
  
     if($e1.text()==="India")
     {
-        $e1.click()
+        cy.wrap($el).click()
     }
  
  

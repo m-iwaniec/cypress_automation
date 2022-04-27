@@ -2,7 +2,7 @@
 
 describe("First test", function() {
     it("First test case", function() {
-        cy.visit('https://rahulshettyacademy.com/')
+        cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
         cy.get(".search-keyword").type("ca")
         // cypress acts like findElement in selenium
         cy.wait(2000)

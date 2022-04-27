@@ -27,6 +27,7 @@ homePage.getTwoWayDataBinding().should('have.value',this.data.name)
 homePage.getEditBox().should('have.attr','minlength','2')
 homePage.getEntrepreneaur().should('be.disabled')
 Cypress.config('defaultCommandTimeout', 8000)
+
 homePage.getShopTab().click()
 
 

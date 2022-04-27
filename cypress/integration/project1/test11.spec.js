@@ -7,7 +7,7 @@ before(function() {
     cy.fixture('example').then(function(data) {
         this.data = data
     })
-  })
+})
 
 
 describe("Eleventh test", function() {

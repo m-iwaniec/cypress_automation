@@ -18,10 +18,10 @@ describe("Seventh test", function() {
         .eq(0)
         .click()
 
-        cy
-        .iframe()
-        .find('h1[class*="pricing-title"]')
-        .should('have.length', 2)
-
+        //cy
+        //.iframe()
+        //.find('h1[class*="pricing-title"]')
+        // .should('have.length', 2)
+        // cy.log('Found 2 h1 tags')
     })
 })

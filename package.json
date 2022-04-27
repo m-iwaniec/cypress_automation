@@ -8,10 +8,19 @@
     "headTest": "npm run test -- --headed --record --spec /home/martyna/cypress_automation/cypress/integration/project1/test1.spec.js",
     "firefoxTest": "npm run test -- --browser firefox --parallel",
     "recordDashboardTest": "npm run test --record --key 944318e-c628-4c4c-a5a7-36990dc9d65a --reporter mochawesome",
-    "greenKartTest": "npm run test -- --spec \"/home/martyna/cypress_automation/cypress/integration/GreenKart/*\""
-    
+    "greenKartTest": "npm run test -- --spec \"/home/martyna/cypress_automation/cypress/integration/GreenKart/*\"",
+    "proj1Test11": "npm run test -- --headed --spec \"/home/martyna/cypress_automation/cypress/integration/project1/test11.spec.js\"",
+    "cucumberTest": "npm run test -- --headed --browser chrome --spec \"/home/martyna/cypress_automation/cypress/integration/project1/BDD/ecommerce.feature\""
   },
-
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/m-iwaniec/cypress_automation.git"
@@ -21,7 +30,6 @@
   "bugs": {
     "url": "https://github.com/m-iwaniec/cypress_automation/issues"
   },
-
   "homepage": "https://github.com/m-iwaniec/cypress_automation#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -29,9 +37,12 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^6.7.1",
     "cypress": "^9.5.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "mocha": "^9.2.2",
     "mochawesome": "^7.1.3",
+    "multiple-cucumber-html-reporter": "^1.20.0",
+    "neat-csv": "5.1.0",
     "ts-loader": "^9.2.8"
   }
 }
